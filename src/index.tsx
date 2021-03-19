@@ -1,4 +1,4 @@
-import React, { Component, FC, HTMLAttributes, ReactChild } from 'react';
+import React, { FC, HTMLAttributes, ReactChild } from 'react';
 
 export interface Props extends HTMLAttributes<HTMLDivElement> {
   /** custom content, defaults to 'the snozzberries taste like snozzberries' */
@@ -23,10 +23,10 @@ type Json =
   | Json[];
 
 type JsonBlobComponents = {
-  Text: typeof Component;
-  ExpandText: typeof Component; // needs to have onPress or onClick
-  View: typeof Component;
-  ExpandView: typeof Component;
+  Text: React.ElementType;
+  ExpandText: React.ElementType; // needs to have onPress or onClick
+  View: React.ElementType;
+  ExpandView: React.ElementType;
 };
 
 type JsonBlobProps = {
