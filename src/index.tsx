@@ -36,7 +36,7 @@ type JsonBlobProps = {
   Components: JsonBlobComponents;
 };
 
-const JsonBlob: React.FC<JsonBlobProps> = ({
+export const JsonBlob: React.FC<JsonBlobProps> = ({
   obj,
   keyString,
   level = 1,
