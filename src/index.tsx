@@ -24,7 +24,10 @@ type Json =
 
 type JsonBlobComponents = {
   Text: React.ElementType;
-  ExpandText: React.ElementType<{ onClick?: () => void; onPress?: () => void }>; // needs to have onPress or onClick
+  ExpandText: React.ElementType<{
+    onClick?: (...args: any) => void;
+    onPress?: (...args: any) => void;
+  }>; // needs to have onPress or onClick
   View: React.ElementType;
   ExpandView: React.ElementType<{ level: number }>; // needs to do something with this level prop to indent shit
 };
