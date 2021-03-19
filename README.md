@@ -1,8 +1,24 @@
-# TSDX React w/ Storybook User Guide
+# ─=≡Σ༼ つ ▀ \_▀ ༽つ`{turbo-json-blob}`
 
-Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
+### Display your json blob with turbo powerz. BYOC (bring your own components for x-plat goodness)
 
-> This TSDX setup is meant for developing React component libraries (not apps!) that can be published to NPM. If you’re looking to build a React-based app, you should use `create-react-app`, `razzle`, `nextjs`, `gatsby`, or `react-static`.
+---
+
+## Installation
+
+```bash
+yarn add turbo-json-blob # or npm install turbo-json-blob
+```
+
+## Basic Usage
+
+```typescript
+// tbd sorry not ready for public comsuming yet
+```
+
+# Dev
+
+This package uses `tsdx`, so some of the instructions for development are left below.
 
 > If you’re new to TypeScript and React, checkout [this handy cheatsheet](https://github.com/sw-yx/react-typescript-cheatsheet/)
 
