@@ -24,9 +24,9 @@ type Json =
 
 type JsonBlobComponents = {
   Text: React.ElementType;
-  ExpandText: React.ElementType; // needs to have onPress or onClick
+  ExpandText: React.ElementType<{ onClick?: () => void; onPress?: () => void }>; // needs to have onPress or onClick
   View: React.ElementType;
-  ExpandView: React.ElementType;
+  ExpandView: React.ElementType<{ level: number }>; // needs to do something with this level prop to indent shit
 };
 
 type JsonBlobProps = {
@@ -127,7 +127,7 @@ const NestedArray: React.FC<{
           onPress={() => setExpanded(false)}
           onClick={() => setExpanded(false)}
         >{`${keyString ? `${keyString}: ` : ``}[`}</Components.ExpandText>
-        <Components.ExpandView level={level} style={{}}>
+        <Components.ExpandView level={level}>
           {obj.map((value, index) => {
             return (
               <JsonBlob
